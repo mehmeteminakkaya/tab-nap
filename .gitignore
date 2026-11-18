@@ -1,0 +1,5 @@
+node_modules/
+dist/
+
+# Personal notes, not for the public repo
+STORE-LISTING.md

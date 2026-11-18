@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tab Nap</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="icons/icon32.png" alt="" width="20" height="20">
+    <h1>Tab Nap</h1>
+  </header>
+
+  <section id="current">
+    <div class="tab-line">
+      <img id="cur-icon" src="icons/icon16.png" alt="" width="16" height="16">
+      <span id="cur-title">This tab</span>
+    </div>
+    <div id="presets" class="grid"></div>
+    <form id="custom">
+      <input id="custom-when" type="datetime-local" required aria-label="Custom date and time">
+      <button type="submit">Snooze</button>
+    </form>
+    <p id="error" role="alert" hidden></p>
+  </section>
+
+  <section>
+    <h2>Sleeping tabs <span id="count"></span></h2>
+    <ul id="list"></ul>
+    <p id="empty" class="muted">No sleeping tabs. Snooze one above and it comes back right on time.</p>
+  </section>
+
+  <footer>
+    <a id="support" href="https://buymeacoffee.com/mehmeteminf" target="_blank" rel="noopener">☕ Buy me a coffee</a>
+    <span class="muted">Alt+Shift+S</span>
+  </footer>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
